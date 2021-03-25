@@ -1,12 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Day 1</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     </head>
     <body>
+        <div class="container-fluid">
+        <div class="page-header text-center">
+            <h1 class="text-uppercase">this is my page header</h1>
+        </div>
+        <div class="container text-center">
+            <div class="jumbotron well well-sm">
+                <h1>This is my Jumbotron</h1>
+            </div>
+        </div>
+        <div class="jumbotron text-center ">
+            <h1>This is my Jumbotron without container</h1>
+        </div>
+        <div class="container bg-info">
+            <div class="row">
+                <div class="col-sm-6">1</div>
+                <div class="col-sm-6">2</div>
+            </div>
+        </div>
+        
+        <div class="container-fluid bg-success text-center">
+            <h1 >Bootstrap<small class="text-capitalize"> heading</small></h1>
+            <h1><mark> Highlight</mark></h1>
+            <div class="row">
+                <div class="col-sm-6">1</div>
+                <div class="col-sm-6">2</div>
+            </div>
+        </div>
+        <blockquote>
+            This is a block qoute and <code>here is a code</code> inside it.
+            <footer>I wrote this</footer>
+        </blockquote>
+        <blockquote class="blockquote-reverse">
+            This is a block qoute is reverse
+            <footer>I wrote this</footer>
+        </blockquote>
+        <h3>I am writing a <abbr title="Data List">dl</abbr></h3>
+        <dl class="dl-horizontal">
+            <dt>1 dt</dt>
+            <dd class="text-info">I am <pre class="well well-lg">1 dd</pre></dd>
+            <dd class="alert alert-danger alert-dismissible fade in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                I am 2<a class="alert-link">dd</a> </dd>
+
+            <dt>2 dt</dt>
+        </dl>
+        <div class="alert alert-success">
+            <kbd>ctrl +s</kbd>
+        </div>
+        <div class="container text-center">
+            <h1>Creating a table</h1>
+            <table class="table table-responsive table-hover">
+                <thead  class="">
+                    <tr >
+                        <th class="text-center" >H1</th>
+                        <th class="text-center">H2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="success">
+                        <td>c1</td>
+                        <td>c2</td>
+                    </tr>
+                    <tr class="info">
+                        <td>c3</td>
+                        <td>c4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="paris.jpg" class="img-rounded img-responsive">
+                        <div class="caption">
+                            <p class="text-info">This is a caption</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="paris.jpg" class="img-circle img-responsive">
+                        <div class="caption">
+                            <p class="text-info">This is a caption</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="paris.jpg" class="img-thumbnail img-responsive">
+                        <div class="caption">
+                            <p class="text-info">This is a caption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <h1 class="text-capitalize"> playing with buttons</h1>
+            <button class="btn btn-primary active">Button</button>
+            <a class="btn btn-danger disabled">Link Button</a>
+        <div class="container well well-sm">
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="button" class="btn btn-success btn-block" value="Button">
+                </div>
+            </div>
+        </div>
+        <div class="container well well-sm">
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="submit" class="btn btn-info btn-lg ">
+                </div>
+            </div>
+        </div>
+        <div class="container well well-sm">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-info">Click Me</button>
+                        <button type="button" class="btn btn-primary active">Clicked</button>
+                        <button type="button" class="btn btn-danger disabled">Don't</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="btn-group-vertical">
+                        <button type="button" class="btn btn-info">Click Me</button>
+                        <button type="button" class="btn btn-primary active">Clicked</button>
+                        <button type="button" class="btn btn-danger disabled">Don't</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-primary">Apple</a>
+              <a href="#" class="btn btn-primary">Samsung</a>
+              <a href="#" class="btn btn-primary">Sony</a>
+        </div>
+        </div>
+        <div class="container text-center">
+            <div class="btn-group ">
+                <button type="button" class="btn btn-info dropdown-toogle" data-toggle="dropdown">
+                    Options | <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href=#> Option1</a></li>
+                    <li><a href=#> Option2</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Split Buttons</h2>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary">Sony <span class="badge"></span></button>
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Tablet</a></li>
+                <li><a href="#">Smartphone</a></li>
+              </ul>
+            </div>
+          </div>
+          <h1>This is  <span class="label label-default">my label</span></h1>
+          <h1>This is  <span class="label label-primary">my label</span></h1>
+        </div>
     </body>
 </html>
